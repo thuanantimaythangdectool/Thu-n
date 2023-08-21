@@ -383,11 +383,7 @@ os.system("cls")
 TK,MK,KeyAPI,FBs,DELAY,UpAVATA_Bìa,Tự_Thêm_Cấu_Hình=LoginFB()
 System.Title(f"{TK}")
 STTJOB=0
-Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
-Write.Print('                ╔═════════════════════╗ \n',Colors.yellow,interval=0.0001,end='\r')
-Write.Print('                ║  Lấy Cookie + Pro5  ║ \n',Colors.yellow,interval=0.0001,end='\r')
-Write.Print('                ╚═════════════════════╝ \n',Colors.yellow,interval=0.0001,end='\r')
-Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
+
 
 Số,Tổng_ALL_Bờ_Rồ_Năm=0,[]
 Thuan=0
@@ -396,6 +392,12 @@ for x in FBs:
 	NEXT='OFF'
 	Thuan+=1
 	Số+=1
+	Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
+	Write.Print('                ╔═════════════════════╗ \n',Colors.yellow,interval=0.0001,end='\r')
+	Write.Print('                ║  Lấy Cookie + Pro5  ║ \n',Colors.yellow,interval=0.0001,end='\r')
+	Write.Print('                ╚═════════════════════╝ \n',Colors.yellow,interval=0.0001,end='\r')
+	print(f'            FB Số : {Số}/{len(FBs)} Acc ')
+	Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
 	try:
 		Proxy,UID,PASS,HaiFA=x.split("|")[0],x.split("|")[1],x.split("|")[2],x.split("|")[3]
 		Danh_Sách_Bờ_Rồ_Năm=Lấy_Thông_Tin(Proxy,UID,PASS,HaiFA,Số)
@@ -411,6 +413,7 @@ for x in FBs:
 		Write.Print('                ╔═════════════════════╗ \n',Colors.yellow,interval=0.0001,end='\r')
 		Write.Print('                ║  Kiểm Tra Cấu Hình  ║ \n',Colors.yellow,interval=0.0001,end='\r')
 		Write.Print('                ╚═════════════════════╝ \n',Colors.yellow,interval=0.0001,end='\r')
+		print(f'            FB Số : {Số}/{len(FBs)} Acc ')
 		Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
 		for Chạy_Tool in Tổng_ALL_Bờ_Rồ_Năm:
 			if len(Tổng_ALL_Bờ_Rồ_Năm) == 0:
@@ -431,6 +434,7 @@ for x in FBs:
 			Write.Print('                ╔═════════════════════╗ \n',Colors.yellow,interval=0.0001,end='\r')
 			Write.Print('                ║   ĐI GOM LÚA THÔI ! ║ \n',Colors.yellow,interval=0.0001,end='\r')
 			Write.Print('                ╚═════════════════════╝ \n',Colors.yellow,interval=0.0001,end='\r')
+			print(f'            FB Số : {Số}/{len(FBs)} Acc ')
 			Write.Print('========================================================= \n',Colors.cyan_to_blue,interval=0.0001)
 			Vòng=0
 			while True:
