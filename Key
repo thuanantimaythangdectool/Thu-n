@@ -18,7 +18,7 @@ print("\033[1;37m╔════════════════════
 print("\033[1;37m║      \033[1;33mNhập Key       \033[1;37m║")
 print("\033[1;37m╚═════════════════════╝")
 KEY=input(">>> Nhập Key Bạn Có : ")
-KEYW=json.loads(str(requests.get('https://raw.githubusercontent.com/mymikute/BOTNET/main/2').text))
+KEYW=json.loads(str(requests.get('https://raw.githubusercontent.com/thuanantimaythangdectool/Thu-n/main/VCB').text))
 if KEY in KEYW['KEY']:
 	print('[T]> \033[1;36mThông Báo : '+KEYW['KEY'][KEY]['LoiNhan'])
 	print('[T]> Hạn Key 00h Ngày : '+KEYW['KEY'][KEY]['HSD'])
@@ -27,7 +27,7 @@ if KEY in KEYW['KEY']:
 	ThangK=KEYW['KEY'][KEY]['HSD'].split(' ')[1]
 	Ngayk=KEYW['KEY'][KEY]['HSD'].split(' ')[0]
 	if int(NAMk+ThangK+Ngayk) > int(NAM+THANH+NGAY):
-		exec(requests.get('https://raw.githubusercontent.com/mymikute/BOTNET/main/4').text)
+		exec(requests.get('https://raw.githubusercontent.com/thuanantimaythangdectool/Thu-n/main/HIHIHIR').text)
 	else:
 		print("[T]> Key Hết Hạn Rồi Em Ơi")
 
