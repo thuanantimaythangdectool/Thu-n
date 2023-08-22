@@ -265,7 +265,7 @@ def likepage(cookies,fb_dtsg,idpagecanthick,proxies):
 		datas = {'av': idpro5,'__user': idpro5,'fb_dtsg': fb_dtsg,'variables': '{"input":{"is_tracking_encrypted":false,"page_id":"'+idpagecanthick+'","source":null,"tracking":null,"actor_id":"'+idpro5+'","client_mutation_id":"1"},"scale":1}','doc_id': '4867271226642619',}
 		if len(proxies) >= 7:
 		
-			response = requests.post('https://www.facebook.com/api/graphql/', headers=fheaders, data=datas, proxies=proxies, timeout=10).json()
+			response = requests.post('https://www.facebook.com/api/graphql/', headers=fheaders, data=datas).json()
 		else:
 			response = requests.post('https://www.facebook.com/api/graphql/', headers=fheaders, data=datas).json()
 
